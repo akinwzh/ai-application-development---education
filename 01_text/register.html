@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>注册 - AI教育</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <h2>注册</h2>
+      <form id="registerForm" action="/register" method="POST">
+        <input type="text" name="username" placeholder="用户名" required />
+        <input type="email" name="email" placeholder="邮箱" required />
+        <input type="password" name="password" placeholder="密码" required />
+        <input
+          type="password"
+          name="confirmPassword"
+          placeholder="确认密码"
+          required
+        />
+        <button type="submit" class="btn">注册</button>
+      </form>
+      <div class="auth-links">
+        <a href="login.html">已有账号？立即登录</a>
+        <a href="index.html" class="btn-light">返回首页</a>
+      </div>
+    </div>
+    <script src="register.js"></script>
+  </body>
+</html>
